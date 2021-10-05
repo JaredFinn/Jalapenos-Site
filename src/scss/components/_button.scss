@@ -1,0 +1,19 @@
+button {
+    cursor: pointer !important;
+}
+
+button.contact-button {
+    font-size: 1.2em;
+    background-color: $color-secondary;
+    color: $color-light;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: lighten($color-secondary, 20%);
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+        border-color: $color-light;
+    }
+}

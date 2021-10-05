@@ -1,0 +1,8 @@
+.contact-us {
+    @include background-parralax(0.7, '../media/contact.webp');
+
+    clip-path: polygon(0 5em, 100% 0, 100% 100%, 0 100%);
+    padding-top: 5em;
+    margin-top: 2em;
+    min-height: 100vh;
+}
