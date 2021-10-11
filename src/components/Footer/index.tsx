@@ -7,6 +7,20 @@ export const Footer: React.FC = () => {
             <div className='center-content social'>
                 <SocialBar />
             </div>
+            <div className="nav">
+                            <ul className="nav-list">
+                                <li className="nav-item"><a className="item-link" href="/">Home</a></li>
+                                <p id="lines">|</p>
+                                <li className="nav-item"><a className="item-link" href="/">Menu</a></li>
+                                <p id="lines">|</p>
+                                <li className="nav-item"><a className="item-link" href="/">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div className="site-general">
+                            <ul className="site-general-nav">
+                                <li className="general-nav-item"><a className="general-link" href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
             <div className='h-contact'>
                 <div className='center-grid-justified' style={{ paddingBottom: '.5em' }}>
                     <div className='left' style={{ marginRight: '2em' }}>
@@ -16,31 +30,26 @@ export const Footer: React.FC = () => {
                         <h5>Contact</h5>
                     </div>
                 </div>
+                
                 <address>
                     <div className='center-grid-justified'>
                         <div className='left'>
-                            <a href='https://goo.gl/maps/3GqZtuYrsxWh9WYN8'>
-                                Cantine Veteran’s Memorial Sports Complex
+                            <a href='https://goo.gl/maps/2aYVtu5MJZHNTJKt6'>
+                                25 N Chestnut St,
                                 <br />
-                                Pavilion St, Saugerties, NY 12477
+                                 New Paltz, NY 12561
                             </a>
                         </div>
                         <div className='right' style={{ marginLeft: '1em' }}>
                             <a href='tel:+18457070265'>
-                                <strong>Phone: </strong>
-                                (845) 707-0265
-                            </a>
-                            <br />
-                            <a href='mailto:info@thestableatcantine.com'>
-                                <strong>Email: </strong>
-                                info@thestableatcantine.com
+                                (845) 255-9000
                             </a>
                         </div>
                     </div>
                 </address>
             </div>
             <div className="copyright">
-                &copy; {moment().year()} — The Stable Club. All rights reserved.
+                &copy; {moment().year()} — Los Jalepenos. All rights reserved.
             </div>
         </footer>
     );

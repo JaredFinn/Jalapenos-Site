@@ -11,4 +11,53 @@
         font-size: 0.9em;
         text-align: center;
     }
+
+    .nav-list{
+        list-style: none;
+        text-align: center;
+    }
+    .nav-item{
+        display: inline;
+    }
+    .item-link{
+        color: rgb(255, 255, 255);
+        font-family: Arial;
+        transition: all .25s ease-in-out;
+    }
+    .item-link:link{
+        text-decoration: none;
+    }
+    .item-link:hover{
+        padding: 10px;
+    }
+    #lines{
+        display: inline;
+        padding: 5px;
+    }
+    .site-general-nav{
+        padding: 20px;
+        font-size: 13px;
+        color: lightgray;
+        text-align: center;
+    }
+    .general-nav-item{
+        display: inline;
+    }
+    .general-link{
+        font-family: Arial;
+        text-decoration: none;
+        color: #bfbfbf;
+    }
+    #dash{
+        display: inline;
+    }
+    .copyright-element{
+        font-family: Arial;
+        font-size: 12px;
+    }
+    #copyright{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
