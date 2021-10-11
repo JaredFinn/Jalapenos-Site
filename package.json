@@ -16,6 +16,7 @@
         "ical": "^0.8.0",
         "material-design-icons": "^3.0.1",
         "moment": "^2.29.1",
+        "node-sass": "^6.0.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^5.2.0",
@@ -40,6 +41,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "watch-sass": "node-sass sass/main.scss css/style.css --watch",
         "sass": "sass --watch ./scss/main.scss src/styles/style.css"
     },
     "eslintConfig": {
