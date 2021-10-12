@@ -1,4 +1,5 @@
 import { Navbar } from '../../components/Navbar/index';
+import menufy from "../../images/Menufy-Order-Button-1.png"
 
 export const Hero: React.FC = () => {
     return (
@@ -16,8 +17,13 @@ export const Hero: React.FC = () => {
                     <div className='h-desc'>
                         <p>Come check out some of our unique and delicious menu items like our House Molcajete served in a sizzling stone bowl! Chef Max and the Los Jalapenos Family are committed to serving some of the most amazing food in the Hudson Valley. Available for dine in, take-out, or use our local delivery service Carry-Out Kings.</p>
                     </div>
+                    <div className="doordash-button">
+                        <a  href="https://www.doordash.com/business/254070/?utm_source=partner-link&utm_medium=website&utm_campaign=254070&utm_content=white-l" target="_blank" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}><div style={{position: "relative", width:"289px", height:"59px", margin: "0px auto", backgroundImage: "url(https://cdn.doordash.com/media/button/button_white_l.svg)", color:"transparent"}}>Order Food Delivery with DoorDash</div></a>
+                    </div>
+                    
                 <div className='right-column'>
-                    <div className='h-form'>
+                    <div className="menufy-button">
+                        <a href="YOUR_MENUFY_SITE_URL" target="_blank" rel="noopener noreferrer" ><img src={menufy} alt="Order Online with Menufy"/></a>
                     </div>
                 </div>
                 <div className="restaurant-info" id="location">

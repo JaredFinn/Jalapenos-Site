@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
                             </a>
                         </div>
                         <div className='right' style={{ marginLeft: '1em' }}>
-                            <a href='tel:+18457070265'>
+                            <a href='tel:+18452559000'>
                                 (845) 255-9000
                             </a>
                         </div>

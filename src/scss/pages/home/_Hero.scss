@@ -45,6 +45,12 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        .doordash-button{
+            margin: 80px;
+        }
+        .menufy-button{
+            
+        }
         .left-column {
             display: flex;
             flex: 1;
@@ -53,6 +59,7 @@
             @media (min-width: 1028px) {
                 margin-right: 1.5em;
             }
+
         }
 
         .right-column {
