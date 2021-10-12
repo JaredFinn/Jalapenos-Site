@@ -201,7 +201,7 @@ h6 {
 
 svg#stable-logo {
   --fill-primary: #ebebeb;
-  --fill-secondary: #000000;
+  --fill-secondary: #ffb6b6;
   --stroke-primary: var(--fill-secondary);
   --stroke-width: 0px;
 }
@@ -244,6 +244,14 @@ svg#stable-logo {
 .nav-container .nav-left {
   margin: 40px;
 }
+.nav-container .nav-center {
+  display: flex;
+  margin: auto;
+  padding-left: 280px;
+}
+.nav-container .nav-center .number {
+  padding-left: 10px;
+}
 .nav-container .nav-right {
   margin-left: auto;
   margin-right: 30px;
@@ -257,12 +265,40 @@ svg#stable-logo {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 490px) {
+  .nav-container {
+    display: none;
+  }
+  .nav-container .nav-left {
+    margin: 40px;
+  }
+  .nav-container .nav-center {
+    display: flex;
+    margin: auto;
+    padding-left: 280px;
+  }
+  .nav-container .nav-center .number {
+    padding-left: 10px;
+  }
+  .nav-container .nav-right {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  .nav-container .nav-right .nav-list {
+    margin: 50px;
+    display: inline-flex;
+  }
+  .nav-container .nav-item {
+    padding-right: 40px;
+    font-size: 20px;
+  }
+}
 .nav-container.active {
   background-color: black;
 }
 
 .footer {
-  background-color: #000000;
+  background-color: black;
   color: #ebebeb;
   padding: 1em;
 }
@@ -369,7 +405,7 @@ button.contact-button:hover {
 }
 
 .event-ribbon {
-  background-color: #1a1a1a;
+  background-color: #ffe9e9;
   display: flex;
   width: 100%;
   color: #ebebeb;
@@ -403,7 +439,7 @@ button.contact-button:hover {
 }
 .event-ribbon:hover {
   cursor: pointer;
-  background-color: #000000;
+  background-color: #ffb6b6;
   transform: scale(105%);
 }
 .event-ribbon:active {
@@ -560,7 +596,7 @@ button.contact-button:hover {
   width: 100%;
   height: 1rem;
   bottom: 0;
-  background-color: #000000;
+  background-color: #ffb6b6;
   animation: close-message ease-in-out forwards;
 }
 
@@ -636,7 +672,7 @@ textarea:focus {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/Hero.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 182, 182, 0.7)), url("../media/Hero.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -650,7 +686,7 @@ textarea:focus {
   padding-bottom: 5em;
 }
 .hero .hero-container .restaurant-info {
-  padding-top: 200px;
+  padding-top: 150px;
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -671,16 +707,16 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: center;
 }
-.hero .hero-container .left-column {
+.hero .hero-container .order-buttons {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 50px;
+  margin-left: auto;
 }
-@media (min-width: 1028px) {
-  .hero .hero-container .left-column {
-    margin-right: 1.5em;
-  }
+.hero .hero-container .order-buttons .doordash-button {
+  margin-right: 50px;
+}
+.hero .hero-container .order-buttons .menufy-button {
+  margin-left: 50px;
 }
 .hero .hero-container .h-logo {
   display: block;
@@ -722,7 +758,7 @@ textarea:focus {
   }
 }
 .contact-us {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/contact.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(174, 209, 182, 0.7)), url("../media/contact.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
