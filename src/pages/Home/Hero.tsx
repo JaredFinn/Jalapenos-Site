@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
             <div className='hero-container'>
                 
                 <div className='h-logo' style={{textAlign: 'center'}}>
-                    <img src="https://menufyproduction.imgix.net/637371690858159795+284634.png?auto=compress,format&h=1080&w=1920&fit=max" alt="logo" />
+                    <img className="logo" src="https://menufyproduction.imgix.net/637371690858159795+284634.png?auto=compress,format&h=1080&w=1920&fit=max" alt="logo" />
                 </div>
                 <div className='hero-content'>                    
                         <div className='h-tag'>
@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
                                 <div className="doordash-button">
                                     <a  href="https://www.doordash.com/business/254070/?utm_source=partner-link&utm_medium=website&utm_campaign=254070&utm_content=white-l" target="_blank" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}><div style={{position: "relative", width:"289px", height:"59px", margin: "0px auto", backgroundImage: "url(https://cdn.doordash.com/media/button/button_white_l.svg)", color:"transparent"}}>Order Food Delivery with DoorDash</div></a>
                                 </div>
-                                <div className="menufy-button">
+                                <div className="doordash-button">
                                     <a href="https://www.losjalapenosnewpaltz.com/order" target="_blank" rel="noopener noreferrer" ><img src={menufy} alt="Order Online with Menufy"/></a>
                                 </div>
                             </div>

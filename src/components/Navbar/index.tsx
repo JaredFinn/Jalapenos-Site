@@ -18,10 +18,11 @@ export const Navbar: React.FC = () => {
     return (
         <nav className={navbar ? 'nav-container active': 'nav-container'}>
             <div className="nav-left">
-                <h1>Los Jalepenos</h1>
+                <h1>Los Jalapenos</h1>
             </div>
             <div className="nav-center">
-                <strong>Phone:</strong>  <a className="number" href='tel:+18452559000'>(845) 255-9000</a>
+                 <a className="number" href='tel:+18452559000'>(845) 255-9000</a>
+                
             </div>
             <div className="nav-right">
                 <ul className="nav-list">

@@ -49,14 +49,12 @@
         .order-buttons{
             display: flex;
             margin-top: 50px;
-            margin-left: auto;
+            
 
             .doordash-button{
-                margin-right: 50px;
+                margin-left: auto;
             }
-            .menufy-button{
-                margin-left: 50px;
-            }
+            
         }
 
         .h-logo {
@@ -86,6 +84,22 @@
         }
     }
 }
+@media (max-width: 680px){
+    .hero{
+        .hero-container{
+            .order-buttons{
+                display: block;
+                .doordash-button{
+                    margin: 10%;
+                    text-align: center;
+                }
+               
+            }
+        }    
+    }
+    
+}
+
 @media (max-width: 1440px) {
     .calendar {
         display: none;

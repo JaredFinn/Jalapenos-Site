@@ -9,17 +9,20 @@
     z-index: 99;
 
     .nav-left{
-        margin: 40px;
+        margin: 2%;
     }
 
     .nav-center{
         display: flex;
-        margin: auto;
-        padding-left: 280px;
+        margin-left: 21%;
+        margin-top: 3%;
+        font-size: 30px;
 
         .number{
             padding-left: 10px;
+            font-size: 50px;
         }
+
     }
 
     .nav-right{
@@ -39,38 +42,13 @@
     }
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 740px) {
     .nav-container {
-        display: none;
-    
-        .nav-left{
-            margin: 40px;
-        }
-    
         .nav-center{
-            display: flex;
-            margin: auto;
-            padding-left: 280px;
-    
-            .number{
-                padding-left: 10px;
-            }
+            display: none;
         }
-    
         .nav-right{
-            margin-left: auto;
-            margin-right: 30px;
-    
-            .nav-list {
-                margin: 50px;
-                display: inline-flex;
-            }
-        }
-        
-        
-        .nav-item{
-            padding-right: 40px;
-            font-size: 20px;
+            display: none;
         }
     }
 }

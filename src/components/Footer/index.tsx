@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
                 </address>
             </div>
             <div className="copyright">
-                &copy; {moment().year()} — Los Jalepenos. All rights reserved.
+                &copy; {moment().year()} — Los Jalapenos. All rights reserved.
             </div>
         </footer>
     );
