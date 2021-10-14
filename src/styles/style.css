@@ -242,15 +242,16 @@ svg#stable-logo {
   z-index: 99;
 }
 .nav-container .nav-left {
-  margin: 40px;
+  margin: 2%;
 }
 .nav-container .nav-center {
   display: flex;
-  margin: auto;
-  padding-left: 280px;
+  margin-left: auto;
+  margin-top: 1%;
+  font-size: 30px;
 }
 .nav-container .nav-center .number {
-  padding-left: 10px;
+  font-size: 50px;
 }
 .nav-container .nav-right {
   margin-left: auto;
@@ -260,37 +261,36 @@ svg#stable-logo {
   margin: 50px;
   display: inline-flex;
 }
+.nav-container .nav-right .hamburger {
+  display: hidden;
+}
 .nav-container .nav-item {
   padding-right: 40px;
   font-size: 20px;
 }
 
-@media only screen and (max-width: 490px) {
-  .nav-container {
-    display: none;
-  }
-  .nav-container .nav-left {
-    margin: 40px;
+@media only screen and (max-width: 1042px) {
+  .nav-container .nav-left h1 {
+    font-size: 30px;
   }
   .nav-container .nav-center {
-    display: flex;
-    margin: auto;
-    padding-left: 280px;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: 2%;
   }
   .nav-container .nav-center .number {
-    padding-left: 10px;
+    font-size: 40px;
   }
   .nav-container .nav-right {
-    margin-left: auto;
-    margin-right: 30px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .nav-container .nav-center {
+    display: none;
   }
   .nav-container .nav-right .nav-list {
-    margin: 50px;
-    display: inline-flex;
-  }
-  .nav-container .nav-item {
-    padding-right: 40px;
-    font-size: 20px;
+    display: none;
   }
 }
 .nav-container.active {
@@ -710,13 +710,13 @@ textarea:focus {
 .hero .hero-container .order-buttons {
   display: flex;
   margin-top: 50px;
-  margin-left: auto;
 }
 .hero .hero-container .order-buttons .doordash-button {
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.hero .hero-container .order-buttons .menufy-button {
-  margin-left: 50px;
+.hero .hero-container .order-buttons .button-space {
+  width: 100px;
 }
 .hero .hero-container .h-logo {
   display: block;
@@ -739,6 +739,38 @@ textarea:focus {
   margin-top: 1em;
 }
 
+@media (max-width: 640px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 182, 182, 0.7)), url("../media/Hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .hero.crop {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5em), 0 100%);
+  }
+  .hero .hero-container {
+    padding-top: 25vh;
+    padding-bottom: 5em;
+  }
+  .hero .hero-container .h-logo {
+    display: block;
+    margin: 0 auto;
+    width: min(100%, 100vw);
+    height: auto;
+    filter: drop-shadow(3px 3px 5px rgba(184, 184, 184, 0.2));
+  }
+}
+@media (max-width: 680px) {
+  .hero .hero-container .order-buttons {
+    display: block;
+  }
+  .hero .hero-container .order-buttons .doordash-button {
+    margin: 10%;
+    text-align: center;
+  }
+}
 @media (max-width: 1440px) {
   .calendar {
     display: none;

@@ -53,6 +53,10 @@
 
             .doordash-button{
                 margin-left: auto;
+                margin-right: auto;
+            }
+            .button-space{
+                width: 100px;
             }
             
         }
@@ -84,6 +88,35 @@
         }
     }
 }
+@media (max-width: 640px){
+    .hero {
+        @include background-parralax(0.7, '../media/Hero.webp');
+    
+        //This will be for a nice looking crop on the image
+        &.crop {
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5em), 0 100%);
+        }
+    
+        //To separate concerns we will put a container for the actual div content
+        .hero-container {
+            //This is the true container for the content. It will have a padding at the top to account for the 5vh covered by the nav.
+            padding-top: 25vh;
+            // padding-left: 1em;
+            padding-bottom: 5em;
+    
+            .h-logo {
+                display: block;
+                margin: 0 auto;
+    
+                width: min(100%, 100vw);
+                height: auto;
+    
+                filter: drop-shadow(3px 3px 5px rgba($color-off-light, 20%));
+            }
+        }
+    }
+}
+
 @media (max-width: 680px){
     .hero{
         .hero-container{

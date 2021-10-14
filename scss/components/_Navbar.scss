@@ -14,12 +14,11 @@
 
     .nav-center{
         display: flex;
-        margin-left: 21%;
-        margin-top: 3%;
+        margin-left: auto;
+        margin-top: 1%;
         font-size: 30px;
 
         .number{
-            padding-left: 10px;
             font-size: 50px;
         }
 
@@ -33,6 +32,9 @@
             margin: 50px;
             display: inline-flex;
         }
+        .hamburger{
+            display: hidden;
+        }
     }
     
     
@@ -42,13 +44,34 @@
     }
 }
 
+@media only screen and (max-width: 1042px) {
+    .nav-container {
+        .nav-left h1{
+            font-size: 30px;
+        }
+        .nav-center{
+            margin-left: auto;
+            margin-right: 3%;
+            margin-top: 2%;
+            .number{
+                font-size: 40px;
+            }
+        }
+        .nav-right{
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 740px) {
     .nav-container {
         .nav-center{
             display: none;
         }
         .nav-right{
-            display: none;
+            .nav-list{
+                display: none;
+            }
         }
     }
 }

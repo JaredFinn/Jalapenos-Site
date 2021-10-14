@@ -23,6 +23,8 @@ export const Hero: React.FC = () => {
                                 <div className="doordash-button">
                                     <a  href="https://www.doordash.com/business/254070/?utm_source=partner-link&utm_medium=website&utm_campaign=254070&utm_content=white-l" target="_blank" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}><div style={{position: "relative", width:"289px", height:"59px", margin: "0px auto", backgroundImage: "url(https://cdn.doordash.com/media/button/button_white_l.svg)", color:"transparent"}}>Order Food Delivery with DoorDash</div></a>
                                 </div>
+                                <div className="button-space">
+                                </div>
                                 <div className="doordash-button">
                                     <a href="https://www.losjalapenosnewpaltz.com/order" target="_blank" rel="noopener noreferrer" ><img src={menufy} alt="Order Online with Menufy"/></a>
                                 </div>
