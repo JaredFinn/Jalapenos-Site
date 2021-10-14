@@ -24,12 +24,14 @@
             .restaurant-location{
                 margin-right: 100px;
                 .address{
+                    font-size: 30px;
                     padding: 20px;
                 }
             }
 
             .restaurant-hours{
                 .day{
+                    font-size: 25px;
                     padding-top: 10px;
                     padding-left: 20px;
                 }
@@ -60,12 +62,33 @@
             }
             
         }
+        .carry-out{
+            text-align: center;
+            margin: 3%;
+            .carry-out-btn{
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                background: rgb(204, 1, 1);
+                color: white;
+                font-family: Arial;
+                font-size: large;
+                width: 289px;
+                .carryout-text{
+                    margin-right: 8%;
+                    float: right;
+                }
+            }
+            
+        }
+        
 
         .h-logo {
             display: block;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
 
-            width: min(70%, 70vw);
+            max-width: 100%;
             height: auto;
 
             filter: drop-shadow(3px 3px 5px rgba($color-off-light, 20%));
@@ -106,9 +129,10 @@
     
             .h-logo {
                 display: block;
-                margin: 0 auto;
+                margin-left: auto;
+                margin-right: auto;
     
-                width: min(100%, 100vw);
+                max-width: 100%;
                 height: auto;
     
                 filter: drop-shadow(3px 3px 5px rgba($color-off-light, 20%));
@@ -131,6 +155,36 @@
         }    
     }
     
+}
+
+@media (max-width: 720px){
+    .hero{
+        .hero-container {
+    
+            .restaurant-info{
+                padding-top: 50px;
+                display: grid;
+                grid-template-columns: auto auto;
+    
+                .restaurant-location{
+                    margin-right: 0;
+                    .address{
+                        font-size: 30px;
+                        padding: 20px;
+                    }
+                }
+    
+                .restaurant-hours{
+                    .day{
+                        font-size: 25px;
+                        padding-top: 10px;
+                        padding-left: 20px;
+                    }
+                }
+    
+            }
+        }
+    }
 }
 
 @media (max-width: 1440px) {

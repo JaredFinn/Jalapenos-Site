@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import { Divide as Hamburger } from 'hamburger-react'
 
 export const Navbar: React.FC = () => {
 
@@ -38,6 +39,11 @@ export const Navbar: React.FC = () => {
                     Location
                 </a></li>
                 </ul>
+            </div>
+            <div className="nav-right-mobile">
+                <div className="mobile-menu">
+                    <Hamburger/>
+                </div>
             </div>
         </nav>
     );

@@ -29,7 +29,15 @@ export const Hero: React.FC = () => {
                                     <a href="https://www.losjalapenosnewpaltz.com/order" target="_blank" rel="noopener noreferrer" ><img src={menufy} alt="Order Online with Menufy"/></a>
                                 </div>
                             </div>
-                            
+                            <div className="carry-out">
+                                    <div className="carryout-container">
+                                        <a href="https://www.carryoutkings.com/order/restaurant/los-jalapenos-menu/30">
+                                            <button className="carry-out-btn">
+                                                    <strong className="carryout-text"><img className="carryout-img" src="https://www.carryoutkings.com/editable/templates/default/images/logo.png" alt="" width="80px" height="30px" />Carry Out Kings</strong>
+                                            </button>
+                                        </a>
+                                    </div>
+                            </div>
                             <div className="restaurant-info" id="location">
                                     <div className="restaurant-location">
                                         <h6>Located:</h6>

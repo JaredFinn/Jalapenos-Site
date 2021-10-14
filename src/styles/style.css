@@ -243,12 +243,14 @@ svg#stable-logo {
 }
 .nav-container .nav-left {
   margin: 2%;
+  margin-top: 3%;
 }
 .nav-container .nav-center {
   display: flex;
   margin-left: auto;
   margin-top: 1%;
   font-size: 30px;
+  padding-left: 35px;
 }
 .nav-container .nav-center .number {
   font-size: 50px;
@@ -261,36 +263,55 @@ svg#stable-logo {
   margin: 50px;
   display: inline-flex;
 }
-.nav-container .nav-right .hamburger {
-  display: hidden;
+.nav-container .nav-right-mobile {
+  display: none;
 }
 .nav-container .nav-item {
   padding-right: 40px;
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1042px) {
-  .nav-container .nav-left h1 {
-    font-size: 30px;
+@media only screen and (max-width: 1070px) {
+  .nav-container .nav-left {
+    display: none;
   }
   .nav-container .nav-center {
-    margin-left: auto;
-    margin-right: 3%;
     margin-top: 2%;
+    margin-left: 0;
   }
   .nav-container .nav-center .number {
-    font-size: 40px;
+    font-size: 35px;
   }
   .nav-container .nav-right {
     display: none;
   }
+  .nav-container .nav-right-mobile {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: 10%;
+  }
+
+  .nav-container.active {
+    height: 80px;
+  }
 }
 @media only screen and (max-width: 740px) {
-  .nav-container .nav-center {
+  .nav-container .nav-left {
     display: none;
+  }
+  .nav-container .nav-center {
+    margin-top: 2%;
+    margin-left: 0;
+  }
+  .nav-container .nav-center .number {
+    font-size: 35px;
   }
   .nav-container .nav-right .nav-list {
     display: none;
+  }
+  .nav-container .nav-right-mobile {
+    display: flex;
   }
 }
 .nav-container.active {
@@ -694,9 +715,11 @@ textarea:focus {
   margin-right: 100px;
 }
 .hero .hero-container .restaurant-info .restaurant-location .address {
+  font-size: 30px;
   padding: 20px;
 }
 .hero .hero-container .restaurant-info .restaurant-hours .day {
+  font-size: 25px;
   padding-top: 10px;
   padding-left: 20px;
 }
@@ -718,10 +741,29 @@ textarea:focus {
 .hero .hero-container .order-buttons .button-space {
   width: 100px;
 }
+.hero .hero-container .carry-out {
+  text-align: center;
+  margin: 3%;
+}
+.hero .hero-container .carry-out .carry-out-btn {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #cc0101;
+  color: white;
+  font-family: Arial;
+  font-size: large;
+  width: 289px;
+}
+.hero .hero-container .carry-out .carry-out-btn .carryout-text {
+  margin-right: 8%;
+  float: right;
+}
 .hero .hero-container .h-logo {
   display: block;
-  margin: 0 auto;
-  width: min(70%, 70vw);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   height: auto;
   filter: drop-shadow(3px 3px 5px rgba(184, 184, 184, 0.2));
 }
@@ -756,8 +798,9 @@ textarea:focus {
   }
   .hero .hero-container .h-logo {
     display: block;
-    margin: 0 auto;
-    width: min(100%, 100vw);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
     height: auto;
     filter: drop-shadow(3px 3px 5px rgba(184, 184, 184, 0.2));
   }
@@ -769,6 +812,25 @@ textarea:focus {
   .hero .hero-container .order-buttons .doordash-button {
     margin: 10%;
     text-align: center;
+  }
+}
+@media (max-width: 720px) {
+  .hero .hero-container .restaurant-info {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .hero .hero-container .restaurant-info .restaurant-location {
+    margin-right: 0;
+  }
+  .hero .hero-container .restaurant-info .restaurant-location .address {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .hero .hero-container .restaurant-info .restaurant-hours .day {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 1440px) {
