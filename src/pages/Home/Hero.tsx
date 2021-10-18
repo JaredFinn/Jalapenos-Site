@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
             <div className='hero-container'>
                 
                 <div className='h-logo' style={{textAlign: 'center'}}>
-                    <img className="logo" src="https://menufyproduction.imgix.net/637371690858159795+284634.png?auto=compress,format&h=1080&w=1920&fit=max" alt="logo" />
+                    <img className="logo" src="losjal.png" alt="logo" width="375" />
                 </div>
                 <div className='hero-content'>                    
                         <div className='h-tag'>
