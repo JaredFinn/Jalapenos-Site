@@ -5,6 +5,9 @@ export const Navbar: React.FC = () => {
 
     const [navbar,setNavbar] = useState(false);
 
+    const [isOpen, setOpen] = useState(false)
+
+
     const navScroll = () => {
         if(window.scrollY >= 80) {
             setNavbar(true)
@@ -42,7 +45,9 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="nav-right-mobile">
                 <div className="mobile-menu">
-                    <Hamburger/>
+                    <div className="hamburger">
+                        <Hamburger toggled={isOpen} toggle={setOpen} />
+                    </div>
                 </div>
             </div>
         </nav>

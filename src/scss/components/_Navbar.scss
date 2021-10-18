@@ -41,6 +41,7 @@
     }
     .nav-right-mobile{
         display: none;
+
     }
     
     
@@ -72,6 +73,12 @@
             margin-left: auto;
             margin-top: 1%;
             margin-right: 10%;
+            .mobile-menu{
+                .hamburger{
+                    position: fixed;
+                }
+                
+            }
         }
     }
     .nav-container.active{
