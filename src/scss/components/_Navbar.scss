@@ -43,6 +43,14 @@
         display: none;
 
     }
+    .nav-right-mobile-menu{
+        a{
+            display: none;
+        }
+        .closebtn {
+            display: none;
+        }
+    }
     
     
     .nav-item{
@@ -73,12 +81,46 @@
             margin-left: auto;
             margin-top: 1%;
             margin-right: 10%;
-            .mobile-menu{
-                .hamburger{
-                    position: fixed;
+        }
+        .nav-right-mobile-menu{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+
+                &:hover{
+                    color: #f1f1f1;
                 }
-                
             }
+            .closebtn {
+                display: flex;
+                margin-left: auto;
+                margin-right: 10%;
+                color: black;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                right: 25px;
+                font-size: 60px;
+                margin-left: 50px;
+            }
+        }
+        .nav-right-mobile-menu.active{
+            background-color: lightgrey;
+            width: 33.3%;
         }
     }
     .nav-container.active{
@@ -103,9 +145,96 @@
                 display: none;
             }
         }
-        .nav-right-mobile{
-            display: flex;
+        .nav-right-mobile-menu{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+
+                &:hover{
+                    color: #f1f1f1;
+                }
+            }
+            .closebtn {
+                display: flex;
+                margin-left: auto;
+                margin-right: 10%;
+                color: black;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                right: 25px;
+                font-size: 60px;
+                margin-left: 50px;
+            }
         }
+        .nav-right-mobile-menu.active{
+            background-color: lightgrey;
+            width: 50%
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-container {
+        .nav-left{
+            display: none;
+        }
+        .nav-center{
+            margin-top: 2%;
+            margin-left: 0;
+            .number{
+                font-size: 30px;
+            }
+        }
+        .nav-right{
+            .nav-list{
+                display: none;
+            }
+        }
+        .nav-right-mobile-menu{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            .closebtn {
+                display: flex;
+                margin-left: auto;
+                margin-right: 10%;
+                color: black;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                right: 25px;
+                font-size: 60px;
+                margin-left: 50px;
+            }
+        }
+        .nav-right-mobile-menu.active{
+            background-color: lightgrey;
+            width: 100%;
+        }
+        
     }
 }
 
