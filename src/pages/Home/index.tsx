@@ -1,5 +1,5 @@
 import { Hero } from './Hero';
-import { ContactUs } from './ContactUs';
+import { ContactUs }  from './ContactUs';
 export const Home: React.FC = () => {
     return (
         <main className='home'>
