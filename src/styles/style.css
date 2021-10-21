@@ -250,7 +250,7 @@ svg#stable-logo {
   margin-left: auto;
   margin-top: 1%;
   font-size: 30px;
-  padding-left: 35px;
+  padding-left: 0.5%;
 }
 .nav-container .nav-center .number {
   font-size: 50px;
@@ -264,6 +264,9 @@ svg#stable-logo {
   display: inline-flex;
 }
 .nav-container .nav-right-mobile {
+  display: none;
+}
+.nav-container .nav-right-mobile-menu {
   display: none;
 }
 .nav-container .nav-item {
@@ -281,6 +284,7 @@ svg#stable-logo {
   }
   .nav-container .nav-center .number {
     font-size: 35px;
+    margin-left: 20px;
   }
   .nav-container .nav-right {
     display: none;
@@ -290,6 +294,46 @@ svg#stable-logo {
     margin-left: auto;
     margin-top: 1%;
     margin-right: 10%;
+  }
+  .nav-container .nav-right-mobile-menu {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .nav-container .nav-right-mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .nav-container .nav-right-mobile-menu a:hover {
+    color: #f1f1f1;
+  }
+  .nav-container .nav-right-mobile-menu .closebtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+  .nav-container .nav-right-mobile-menu.active {
+    background-color: lightgrey;
+    width: 33.3%;
   }
 
   .nav-container.active {
@@ -305,13 +349,95 @@ svg#stable-logo {
     margin-left: 0;
   }
   .nav-container .nav-center .number {
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 1%;
   }
   .nav-container .nav-right .nav-list {
     display: none;
   }
-  .nav-container .nav-right-mobile {
+  .nav-container .nav-right-mobile-menu {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .nav-container .nav-right-mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .nav-container .nav-right-mobile-menu a:hover {
+    color: #f1f1f1;
+  }
+  .nav-container .nav-right-mobile-menu .closebtn {
     display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+  .nav-container .nav-right-mobile-menu.active {
+    background-color: lightgrey;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .nav-container .nav-left {
+    display: none;
+  }
+  .nav-container .nav-center {
+    margin-top: 2%;
+    margin-left: 0;
+  }
+  .nav-container .nav-center .number {
+    font-size: 30px;
+  }
+  .nav-container .nav-right .nav-list {
+    display: none;
+  }
+  .nav-container .nav-right-mobile-menu {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .nav-container .nav-right-mobile-menu .closebtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+  .nav-container .nav-right-mobile-menu.active {
+    background-color: lightgrey;
+    width: 100%;
   }
 }
 .nav-container.active {

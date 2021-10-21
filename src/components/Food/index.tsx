@@ -4,14 +4,11 @@ import Carousel from 'react-bootstrap/Carousel';
 export const Food: React.FC = () => {
     return (
         <div className="food-images">
-            <img
-                    src="burrito.png"
-                    alt="Burrito"
-                    />
+            <img src='burrito.png'/>
             <Carousel>
                 <Carousel.Item interval={1000}>
                     <img
-                    src="burrito.jpg"
+                    src="burrito.png"
                     alt="Burrito"
                     />
                     <Carousel.Caption>
