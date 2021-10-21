@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/Footer/ScrollToTop';
 import { Home } from './pages/Home';
-import './styles/style.css';
+import './scss/main.scss';
 
 export const App: React.FC = () => {
     return (

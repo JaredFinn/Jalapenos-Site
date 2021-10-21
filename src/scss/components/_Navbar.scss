@@ -18,11 +18,10 @@
         margin-left: auto;
         margin-top: 1%;
         font-size: 30px;
-        padding-left: 35px;
+        padding-left: .5%;
     
         .number{
             font-size: 50px;
-            
         }
 
     }
@@ -44,12 +43,7 @@
 
     }
     .nav-right-mobile-menu{
-        a{
-            display: none;
-        }
-        .closebtn {
-            display: none;
-        }
+        display: none;
     }
     
     
@@ -71,6 +65,7 @@
             margin-left: 0;
             .number{
                 font-size: 35px;
+                margin-left: 20px;
             }
         }
         .nav-right{
@@ -83,6 +78,7 @@
             margin-right: 10%;
         }
         .nav-right-mobile-menu{
+            display: block;
             height: 100%;
             width: 0;
             position: fixed;
@@ -138,6 +134,7 @@
             margin-left: 0;
             .number{
                 font-size: 30px;
+                margin-top: 1%;
             }
         }
         .nav-right{
@@ -146,6 +143,7 @@
             }
         }
         .nav-right-mobile-menu{
+            display: block;
             height: 100%;
             width: 0;
             position: fixed;
@@ -207,6 +205,7 @@
             }
         }
         .nav-right-mobile-menu{
+            display: block;
             height: 100%;
             width: 0;
             position: fixed;
