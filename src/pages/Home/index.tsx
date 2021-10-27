@@ -1,3 +1,4 @@
+import React from "react";
 import { Hero } from './Hero';
 import { ContactUs }  from './ContactUs';
 export const Home: React.FC = () => {

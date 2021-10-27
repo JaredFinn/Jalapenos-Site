@@ -1,3 +1,4 @@
+import React from "react";
 export const Instagram: React.FC = () => {
     return <svg role="img" id="instagram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
         <radialGradient id="rg" r="150%" cx="30%" cy="107%">

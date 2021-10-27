@@ -1,3 +1,4 @@
+import React from "react";
 export const ScrollToTop: React.FC = () => {
     const handleButtonClick = () => {
         window.scrollTo({ top: 0 });

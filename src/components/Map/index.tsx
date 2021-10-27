@@ -1,10 +1,6 @@
 import React from "react";
-import chimi from "../../images/chimi.jpg";
-import nachos from "../../images/nachos.jpg";
-import quesadilla from "../../images/quesadilla.jpg";
 
-
-export const Food: React.FC = () => {
+export const Map: React.FC = () => {
 
     return (        
         <div className="map-container" id="location">
