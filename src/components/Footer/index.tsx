@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                             <ul className="nav-list">
                                 <li className="nav-item"><a className="item-link" href="/">Home</a></li>
                                 <p id="lines">|</p>
-                                <li className="nav-item"><a className="item-link" href="/">Menu</a></li>
+                                <li className="nav-item"><a className="item-link" href="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/120562035_1699028470256235_3802361383676925407_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OaYYUg5DVdIAX-0F4bJ&_nc_ht=scontent-lga3-2.xx&oh=79fa33b830880fddfdfe6611ad0291b4&oe=618A8649">Menu</a></li>
                                 <p id="lines">|</p>
                                 <li className="nav-item"><a className="item-link" href="/">Contact</a></li>
                             </ul>

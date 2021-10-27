@@ -4,7 +4,7 @@ import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/Footer/ScrollToTop';
 import { Home } from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/style.css';
+import './scss/main.scss';
 
 export const App: React.FC = () => {
     return (
