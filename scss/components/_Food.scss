@@ -1,0 +1,15 @@
+.map-container{
+    margin: 5%;
+}
+
+@media (max-width: 820px){
+    .map{
+        width: 500px;
+    }
+}
+
+@media (max-width: 550px){
+    .map{
+        width: 350px;
+    }
+}

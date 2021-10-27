@@ -1,12 +1,24 @@
+import React, { useState, useEffect} from 'react';
 import { Navbar } from '../../components/Navbar/index';
 import menufy from "../../images/Menufy-Order-Button-1.png"
 
 export const Hero: React.FC = () => {
+
+    const [open, setOpen] = useState(true);
+    let signOpen = "Open";
+    let signClosed = "Closed";
+
+    var today = new Date(),
+
+    time = today.getHours()
+    if(time > 11 && time < 22){
+        setOpen(false);
+    }
+
     return (
         <header className='hero crop'>
             <Navbar/>
             <div className='hero-container'>
-                
                 <div className='h-logo' style={{textAlign: 'center'}}>
                     <img className="logo" src="losjal.png" alt="logo" width="375" />
                 </div>
@@ -38,25 +50,11 @@ export const Hero: React.FC = () => {
                                         </a>
                                     </div>
                             </div>
-                            <div className="restaurant-info" id="location">
-                                    <div className="restaurant-location">
-                                        <h6>Located:</h6>
-                                        <h4 className="address" ><a href='https://goo.gl/maps/2aYVtu5MJZHNTJKt6'>
-                                            25 N Chestnut St,
-                                            <br />
-                                            New Paltz, NY 12561
-                                        </a></h4>
-                                    </div>
+                            <div className="restaurant-info">
                                     <div className="restaurant-hours">
                                         <ul>
-                                            <h6>Hours:</h6>
-                                            <li className="day">Monday: 11AM-10PM</li>
-                                            <li className="day">Tuesday: 11AM-10PM</li>
-                                            <li className="day">Wednesday: 11AM-10PM</li>
-                                            <li className="day">Thursday: 11AM-10PM</li>
-                                            <li className="day">Friday: 11AM-10PM</li>
-                                            <li className="day">Saturday: 11AM-10PM</li>
-                                            <li className="day">Sunday: 11AM-10PM</li>
+                                            <h6 className="tit">Hours:</h6>
+                                            <li className="day">Monday-Sunday: 11AM-10PM</li>
                                         </ul>
                                     </div>
                             </div>

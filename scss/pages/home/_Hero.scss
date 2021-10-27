@@ -18,22 +18,29 @@
 
         .restaurant-info{
             padding-top: 150px;
-            display: grid;
-            grid-template-columns: auto auto;
 
-            .restaurant-location{
-                margin-right: 100px;
-                .address{
-                    font-size: 30px;
-                    padding: 20px;
-                }
+            .open-sign{
+                display: none;
+            }
+            .open-sign.active{
+                display: block;
+            }
+            .closed-sign{
+                display: none;
+            }
+            .closed-sign.active{
+                display: block;
             }
 
+
             .restaurant-hours{
+                text-align: center;
+                .tit{
+                    font-size: 35px;
+                }
                 .day{
-                    font-size: 25px;
+                    font-size: 40px;
                     padding-top: 10px;
-                    padding-left: 20px;
                 }
             }
 
