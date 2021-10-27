@@ -4,17 +4,6 @@ import menufy from "../../images/Menufy-Order-Button-1.png"
 
 export const Hero: React.FC = () => {
 
-    const [open, setOpen] = useState(true);
-    let signOpen = "Open";
-    let signClosed = "Closed";
-
-    var today = new Date(),
-
-    time = today.getHours()
-    if(time > 11 && time < 22){
-        setOpen(false);
-    }
-
     return (
         <header className='hero crop'>
             <Navbar/>
