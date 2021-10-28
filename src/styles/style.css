@@ -237,14 +237,17 @@ h6 {
   margin-top: 3%;
 }
 .nav-container .nav-center {
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-top: 1%;
-  font-size: 30px;
   padding-left: 6%;
 }
-.nav-container .nav-center .number {
+.nav-container .nav-center .mobile-title {
+  display: none;
   font-size: 50px;
+}
+.nav-container .nav-center .number {
+  font-size: 55px;
 }
 .nav-container .nav-right {
   margin-left: auto;
@@ -273,9 +276,12 @@ h6 {
     margin-top: 2%;
     margin-left: 0;
   }
-  .nav-container .nav-center .number {
+  .nav-container .nav-center .mobile-title {
+    display: block;
     font-size: 35px;
-    margin-left: 20px;
+  }
+  .nav-container .nav-center .number {
+    font-size: 40px;
   }
   .nav-container .nav-right {
     display: none;
@@ -305,7 +311,7 @@ h6 {
     font-size: 25px;
     color: black;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
   }
   .nav-container .nav-right-mobile-menu a:hover {
     color: #f1f1f1;
@@ -326,9 +332,21 @@ h6 {
     background-color: lightgrey;
     width: 33.3%;
   }
+  .nav-container .nav-right-mobile-menu.active .closebtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-top: -8%;
+  }
 
   .nav-container.active {
-    height: 80px;
+    height: 110px;
   }
 }
 @media only screen and (max-width: 740px) {
@@ -339,8 +357,12 @@ h6 {
     margin-top: 2%;
     margin-left: 0;
   }
-  .nav-container .nav-center .number {
+  .nav-container .nav-center .mobile-title {
+    display: block;
     font-size: 30px;
+  }
+  .nav-container .nav-center .number {
+    font-size: 35px;
     margin-top: 1%;
   }
   .nav-container .nav-right .nav-list {
@@ -372,15 +394,15 @@ h6 {
   }
   .nav-container .nav-right-mobile-menu .closebtn {
     display: flex;
-    margin-left: auto;
-    margin-right: 10%;
     color: black;
     position: absolute;
     cursor: pointer;
     top: 0;
     right: 25px;
     font-size: 60px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: 10%;
   }
   .nav-container .nav-right-mobile-menu.active {
     background-color: lightgrey;
@@ -394,6 +416,10 @@ h6 {
   .nav-container .nav-center {
     margin-top: 2%;
     margin-left: 0;
+  }
+  .nav-container .nav-center .mobile-title {
+    display: block;
+    font-size: 25px;
   }
   .nav-container .nav-center .number {
     font-size: 30px;
@@ -433,6 +459,7 @@ h6 {
 }
 .nav-container.active {
   background-color: black;
+  height: auto;
 }
 
 .footer {
