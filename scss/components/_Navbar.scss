@@ -14,14 +14,16 @@
     }
 
     .nav-center{
-        display: flex;
+        display: block;
         margin-left: auto;
         margin-top: 1%;
-        font-size: 30px;
         padding-left: 6%;
-    
-        .number{
+        .mobile-title{
+            display: none;
             font-size: 50px;
+        }
+        .number{
+            font-size: 55px;
         }
 
     }
@@ -63,9 +65,12 @@
         .nav-center{
             margin-top: 2%;
             margin-left: 0;
-            .number{
+            .mobile-title{
+                display: block;
                 font-size: 35px;
-                margin-left: 20px;
+            }
+            .number{
+                font-size: 40px;
             }
         }
         .nav-right{
@@ -95,7 +100,7 @@
                 font-size: 25px;
                 color: black;
                 display: block;
-                transition: 0.3s;
+                transition: 0.5s ease-in-out;
 
                 &:hover{
                     color: #f1f1f1;
@@ -117,10 +122,22 @@
         .nav-right-mobile-menu.active{
             background-color: lightgrey;
             width: 33.3%;
+            .closebtn {
+                display: flex;
+                margin-left: auto;
+                margin-right: 10%;
+                color: black;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                right: 25px;
+                font-size: 60px;
+                margin-top: -8%;
+            }
         }
     }
     .nav-container.active{
-        height: 80px;
+        height: 110px;
     }
 }
 
@@ -132,8 +149,12 @@
         .nav-center{
             margin-top: 2%;
             margin-left: 0;
-            .number{
+            .mobile-title{
+                display: block;
                 font-size: 30px;
+            }
+            .number{
+                font-size: 35px;
                 margin-top: 1%;
             }
         }
@@ -168,15 +189,17 @@
             }
             .closebtn {
                 display: flex;
-                margin-left: auto;
-                margin-right: 10%;
+
                 color: black;
                 position: absolute;
                 cursor: pointer;
                 top: 0;
                 right: 25px;
                 font-size: 60px;
-                margin-left: 50px;
+
+                margin-left: auto;
+                margin-top: 1%;
+                margin-right: 10%;
             }
         }
         .nav-right-mobile-menu.active{
@@ -195,6 +218,10 @@
         .nav-center{
             margin-top: 2%;
             margin-left: 0;
+            .mobile-title{
+                display: block;
+                font-size: 25px;
+            }
             .number{
                 font-size: 30px;
             }
@@ -240,6 +267,7 @@
 
 .nav-container.active{
     background-color: black;
+    height: auto;
 }
 
 
