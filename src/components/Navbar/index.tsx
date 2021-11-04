@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
                 <h1>Los Jalapenos</h1>
             </div>
             <div className="nav-center">
-                <h3 className="mobile-title">Los Jalapenos</h3>
+                <h3 className="mobile-title">Los Jalape<span>&#241;</span>os</h3>
                 <a className="number" href='tel:+18452559000'>(845) 255-9000</a>
             </div>
             <div className="nav-right">
