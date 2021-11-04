@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
     return (
         <nav className={navbar ? 'nav-container active': 'nav-container'}>
             <div className="nav-left">
-                <h1>Los Jalapenos</h1>
+                <h1>Los Jalape<span>&#241;</span>os</h1>
             </div>
             <div className="nav-center">
                 <h3 className="mobile-title">Los Jalape<span>&#241;</span>os</h3>
