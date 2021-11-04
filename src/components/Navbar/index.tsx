@@ -35,6 +35,7 @@ export const Navbar: React.FC = () => {
             <div className="nav-right">
                 <ul className="nav-list">
                     <li className="nav-item"><a href="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/120562035_1699028470256235_3802361383676925407_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OaYYUg5DVdIAX-0F4bJ&_nc_ht=scontent-lga3-2.xx&oh=79fa33b830880fddfdfe6611ad0291b4&oe=618A8649">Menu</a></li>
+                    <li className="nav-item"><a href="https://www.facebook.com/photo?fbid=1520885564937589&set=pcb.1520885788270900" target="_blank">Drink Menu</a></li>
                     <li className="nav-item"><a
                     href='#location'
                     onClick={(e) => {
@@ -48,23 +49,31 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="nav-right-mobile">
                 <div className="mobile-menu">
-                    <div className="hamburger">
+                    <div className={isOpen ? 'hamburger active': 'hamburger'}>
                         <Hamburger toggled={isOpen} toggle={setOpen} />
+                    </div>
+                    <div className={isOpen ? 'nav-right-mobile-menu active': 'nav-right-mobile-menu'}>
+                        <div className="links">
+                            <div>
+                                <div>
+                                    <ul>
+                                    <li><a href="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/120562035_1699028470256235_3802361383676925407_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OaYYUg5DVdIAX-0F4bJ&_nc_ht=scontent-lga3-2.xx&oh=79fa33b830880fddfdfe6611ad0291b4&oe=618A8649">Menu</a></li>
+                                    <li><a href="https://www.facebook.com/photo?fbid=1520885564937589&set=pcb.1520885788270900" target="_blank">Drink Menu</a></li>
+                                    <li><a href='#location'
+                                    onClick={(e) => {
+                                        close()
+                                        e.preventDefault();
+                                        window.document.getElementById('location')?.scrollIntoView();
+                                    }}>Location</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className={isOpen ? 'nav-right-mobile-menu active': 'nav-right-mobile-menu'}>
-                <a onClick={() => close()} className='closebtn'>&times;</a>
-                <div className="links">
-                    <a href="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/120562035_1699028470256235_3802361383676925407_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OaYYUg5DVdIAX-0F4bJ&_nc_ht=scontent-lga3-2.xx&oh=79fa33b830880fddfdfe6611ad0291b4&oe=618A8649">Menu</a>
-                    <a href='#location'
-                        onClick={(e) => {
-                            close()
-                            e.preventDefault();
-                            window.document.getElementById('location')?.scrollIntoView();
-                        }}>Location</a>
-                </div>
-            </div>
+           
         </nav>
     );
 };

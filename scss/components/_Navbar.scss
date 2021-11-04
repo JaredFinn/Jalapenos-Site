@@ -30,12 +30,19 @@
 
     .nav-right{
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 20px;
 
 
         .nav-list {
-            margin: 50px;
+            margin-top: 50px;
+            margin-left: 10px;
             display: inline-flex;
+
+            .nav-item{
+                padding-right: 30px;
+                font-size: 20px;
+            }
+
         }
 
         
@@ -49,10 +56,7 @@
     }
     
     
-    .nav-item{
-        padding-right: 40px;
-        font-size: 20px;
-    }
+    
 }
 
 
@@ -80,7 +84,15 @@
             display: flex;
             margin-left: auto;
             margin-top: 1%;
-            margin-right: 10%;
+            margin-right: 3%;
+            .mobile-menu{
+                .hamburger.active{
+                    .hamburger-react{
+                        z-index: 2;
+                        color: black;
+                    }
+                }
+            }
         }
         .nav-right-mobile-menu{
             display: block;
@@ -98,7 +110,7 @@
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
                 font-size: 25px;
-                color: black;
+                color: rgba(0, 0, 0, 0);
                 display: block;
                 transition: 0.5s ease-in-out;
 
@@ -122,6 +134,9 @@
         .nav-right-mobile-menu.active{
             background-color: lightgrey;
             width: 33.3%;
+            a{
+                color: black;
+            }
             .closebtn {
                 display: flex;
                 margin-left: auto;
