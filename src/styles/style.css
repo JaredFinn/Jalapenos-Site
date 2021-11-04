@@ -251,21 +251,22 @@ h6 {
 }
 .nav-container .nav-right {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .nav-container .nav-right .nav-list {
-  margin: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
   display: inline-flex;
+}
+.nav-container .nav-right .nav-list .nav-item {
+  padding-right: 30px;
+  font-size: 20px;
 }
 .nav-container .nav-right-mobile {
   display: none;
 }
 .nav-container .nav-right-mobile-menu {
   display: none;
-}
-.nav-container .nav-item {
-  padding-right: 40px;
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -290,7 +291,11 @@ h6 {
     display: flex;
     margin-left: auto;
     margin-top: 1%;
-    margin-right: 10%;
+    margin-right: 3%;
+  }
+  .nav-container .nav-right-mobile .mobile-menu .hamburger.active .hamburger-react {
+    z-index: 2;
+    color: black;
   }
   .nav-container .nav-right-mobile-menu {
     display: block;
@@ -309,7 +314,7 @@ h6 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: rgba(0, 0, 0, 0);
     display: block;
     transition: 0.5s ease-in-out;
   }
@@ -331,6 +336,9 @@ h6 {
   .nav-container .nav-right-mobile-menu.active {
     background-color: lightgrey;
     width: 33.3%;
+  }
+  .nav-container .nav-right-mobile-menu.active a {
+    color: black;
   }
   .nav-container .nav-right-mobile-menu.active .closebtn {
     display: flex;
